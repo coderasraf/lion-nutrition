@@ -1,0 +1,1195 @@
+:root{
+    --primary-background:#81BEB0;
+    --secondary-background:#292E61;
+    --third-background:#3B4280;
+    --gray-bg: #F0F0F0;
+    --shadow: 0px 15px 50px rgba(0, 0, 0, 0.08);
+;
+}
+/* =========================== */
+/* BASIC SETUP */
+/* =========================== */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.heading-two{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 150%;
+    color: #2A2D46;
+}
+
+a{
+    font-family: Montserrat;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+input,textarea,button,select{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background: #f9f9f9;
+    appearance:none;
+}
+
+.section-padding{
+    padding: 100px 0;
+}
+.padding-top0{
+    padding-top: 0;
+}
+.section-title{
+    margin-bottom: 50px !important;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 41px;
+    color: #2A2D46;
+}
+.btns{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2A2D46;
+}
+.boxed-btn {
+    padding: 10px 32px;
+    background: yellow;
+    margin-top: 30px;
+    display: inline-block;
+    border-radius: 50px;
+    transition: .3s ease-in-out;
+}
+.btns i {
+    margin-left: 14px;
+}
+.boxed-btn:hover {
+    background: #000;
+    color: #fff;
+}
+/*End of base css*/
+
+/*Start of Main css*/
+
+/*========Header CSS =======*/
+.header-inner {
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    display: flex; /* NEW, Spec - Firefox, Chrome, Opera */
+}
+
+.fixed-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(42, 45, 70, 0.3);
+}
+.main-menu {
+    flex-wrap: wrap;
+    display: flex; /* NEW, Spec - Firefox, Chrome, Opera */
+}
+.main-menu li {
+    margin: 0 17px;
+}
+.main-menu li a {
+    color: #fff;
+    transition: .3s ease-in-out;
+}
+.main-menu li a:hover {
+    color: #FFD056;
+}
+.select-icon select {
+    cursor: pointer;
+    padding: 0;
+    background: none;
+    color: #fff;
+    font-weight: bold;
+    cursor:pointer;
+}
+.absolute-icon {
+    position: absolute;
+    right: -13px;
+    pointer-events: none;
+}
+.select-icon select option {
+    color: #333;
+    padding: 10px;
+    cursor: pointer;
+}
+.select-icon {
+    position: relative;
+}
+/*========End of Header css ======*/
+/*======Welcome bg css ======*/
+.welcome-bg {
+    height: 783px;
+    align-items: center;
+    color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex; /* NEW, Spec - Firefox, Chrome, Opera */
+}
+.welcome-bg .h1-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 47px;
+    line-height: 128.9%;
+    color: #FFFFFF;
+}
+/*====End of welcome bg =======*/
+
+/*======Start of inside-foodbox-css ==== */
+.grid-box-item-single-inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(165px, 1fr));
+    gap: 30px;
+    max-width: 452px;
+    margin-left: 45px;
+}
+.h5-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+    color: #2A2D46;
+    text-align: center;
+}
+
+.grid-box-single {
+    text-align: center;
+    background: #333;
+    min-width: 190px;
+    min-height: 190px;
+    max-width: 190px;
+    min-height: 190px;
+    box-shadow:  0px 15px 50px rgba(0, 0, 0, 0.08);
+    background: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 21px;
+}
+.grid-box-single img {
+    margin-bottom: 14px;
+}
+.inside-foodbox-section .row {
+    align-items: center;
+}
+.grid-box-inner-mod.top {margin-top: 37px;}
+.grid-box-single {
+    margin-bottom: 32px;
+}
+.h2-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 41px;
+    color: #2A2D46;
+    margin-bottom: 30px;
+}
+.borderd-btn {
+    padding: 10px 30px;
+    border: 2px solid #000;
+    border-radius: 50px;
+    margin-top: 17px;
+    display: inline-block;
+    transition: .3s ease-in-ou;
+}
+.right-content-grid-box .btns {
+    background: yellow;
+    border-color: yellow;
+    box-shadow: var(--shadow);
+}
+.borderd-btn:hover {
+    background: #FFD056;
+    border-color: #FFD056;
+    color: #000;
+}
+/*======Start of inside-foodbox-css ==== */
+
+/*======Discount area css======*/
+.discount-area {
+    height: 362px;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+.big-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 122px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.meta-dis {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.dis-p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+/*======End of discount area css ====*/
+
+/*======Proudct carosuel area css =====*/
+.love-icon img{
+    width: auto !important;
+    cursor: pointer;
+}
+.single-carousel-box-item {
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    position: relative;
+    transition: .3s ease-in-out;
+    margin-bottom: 32px;
+}
+.single-carousel-box-item:hover {
+    background: #FFD056;
+}
+.single-carousel-box-item:hover  .btns {
+    background: #fff;
+}
+
+.love-icon{
+    position: absolute;
+    right: 14px;
+}
+.pro-title{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2A2D46;
+}
+.meta-pro-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+    color: #2A2D46;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.disc-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+    color: #FF0303;
+    margin-top: 5px;
+    display: inline-block;
+}
+.price-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2A2D46;
+}
+
+.bottom-buttons .boxed-btn {
+    margin: 0;
+    font-size: 14px;
+    padding: 7px 20px;
+}
+.bottom-buttons {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+/*======Proudct carosuel area css =====*/
+
+
+
+
+
+
+
+.special-meals-inner-tab {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
+    margin-bottom: 57px;
+}
+
+
+/*======how it work section ======*/
+.how-it-inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(230px, 1fr));
+    column-gap: 210px;
+    position: relative;
+    z-index: 1;
+}
+
+.top-img img {
+    width: 275px;
+    height: 275px;
+    border-radius: 50%;
+    color: #e5e5e5;
+}
+
+.top-img img:first-child {
+    border: 2px solid #e4e4e4;
+}
+.how-it-inner-single-item h3 {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    margin-top: 34px;
+    font-style: normal;
+}
+
+.line {
+    position: absolute;
+}
+
+.line.line-1 {
+    top: -1%;
+    left: 14%;
+    transform: rotate(2deg);
+}
+.line.line-2 {
+    right: 18%;
+    top: 18%;
+}
+/*======End of how it work ========*/
+
+/*======Our Special Plans css code ======*/
+.tab-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #2A2D46;
+}
+
+.single-speciality-tab {
+    box-shadow: var(--shadow);
+    padding: 25px 15px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.oragne {
+    background: #FFD056;
+    color: #fff;
+}
+
+.oragne .tab-title {
+    color: #fff;
+}
+
+.tab-title {
+    margin-bottom: 14px;
+}
+.product-filter-area .nav {
+    justify-content: space-between;
+    margin-bottom: 40px !important;
+}
+.nav-link {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #2A2D46;
+}
+.fixed-header{
+    transition: .3s ease-in-out;
+    z-index: 999999;
+}
+.fixed-nav{
+    background: rgb(42 45 70 / 100%);
+    box-shadow: var(--shadow);
+    color: #000;
+    z-index: 99999;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #2A2D46;
+    background-color: #fecf56;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-family: 'Montserrat';
+    box-shadow: var(--shadow);
+}
+.single-filter-pro-item {
+    box-shadow: var(--shadow);
+    margin: 0 12px;
+    width: 30.3333% !important;
+    max-width: 30.3333% !important;
+    flex-basis: 30.3333% !important;
+    padding: 0  25px !important;
+}
+.bottom-buttons .boxed-btn:hover{
+    color:#000;
+}
+a.filter-pro-title {
+    display: inline-block;
+}
+.filter-pro-cat {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ABABAB;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.single-filter-pro-item img {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 16px;
+}
+.filter-pro-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 140%;
+    color: #2A2D46;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.pro-cal {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #ABABAB;
+    text-align: left;
+}
+.order-callto-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-callto-left {text-align: left;}
+
+.element-call-left {
+    display: flex;
+}
+
+.order-callto-action {
+    box-shadow: var(--shadow);
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+.order-callto-right a {
+    margin: 0;
+}
+ul.element-call-left li:first-child {
+    margin: 0;
+}
+ul.element-call-left li {
+    margin: 0 14px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #ABABAB;
+}
+/*======END Special Plans css code ======*/
+
+/*======Work process css code ========*/
+.main-box-content h2 {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 0;
+    color: #2a2d46;
+    margin-bottom: 21px;
+    font-weight: bold;
+    text-transform:uppercase;
+}
+
+.single-planing-box {
+    background: #fff;
+}
+
+.planning-area {
+    padding: 80px 0;
+    position: relative;
+    z-index: 9;
+}
+
+.icon-area img {
+    max-width: 216px;
+    height: 138px;
+}
+
+.single-planing-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--shadow);
+    padding: 25px;
+    border-radius: 25px;
+}
+
+.main-box-content p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #2a2d46;
+    opacity: .9;
+}
+.content-para {
+    min-height: 192px;
+    margin-bottom: 32px;
+    margin-top: 50px;
+}
+.view-plan-btn {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0;
+    color: #000;
+    border: 2px solid #2a2d46;
+    display: inline-block;
+    padding: 9px 22px;
+    border-radius: 25px;
+    text-transform: capitalize;
+    transition: .3s ease-in-out;
+}
+.yellow-btn {
+    background-color: yellow;
+    border-color: yellow;
+}
+.view-plan-btn:hover {
+    background-color: yellow;
+    border-color: yellow;
+    color: #2a2d46;
+    box-shadow: var(--shadow);
+}
+.col-btn {
+    margin: 0;
+    padding: 9px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: 0;
+    margin-bottom: 20px;
+    margin-top: 13px;
+    text-align: left;
+}
+/*=====End of work process css =======*/
+
+/*=====quote carousel area css =======*/
+.single-quote-carousel {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: var(--shadow);
+    align-items: center;
+    border-radius: 0 25px 25px;
+}
+
+.right-quote-carousel {
+    padding: 24px 33px;
+    flex: 1;
+    width: 403px;
+}
+.meta-car-author {
+    display: flex;
+    align-items: center;
+}
+
+h3.title-main {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2A2D46;
+}
+
+.meta-author-desc {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #ABABAB;
+}
+
+.meta-car-author img {
+    margin-right: 24px;
+}
+
+.meta-car-author {
+    margin-bottom: 30px;
+}
+.meta-car-author img {
+    width: auto !important;
+}
+.quote-carousel-inner.owl-carousel .owl-stage-outer{
+    overflow: inherit;
+}
+.order-callto-inner {
+    padding: 26px 20px;
+}
+
+.order-call-title {
+    margin-bottom: 12px;
+}
+ul.element-call-left li strong {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #2A2D46;
+}
+
+strong.color-re {
+    color: #F8C328 !important;
+}
+/*=====quote carousel area css =======*/
+
+/*owlbtn-css*/
+.owl-dots button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0 6px;
+    border: 1px solid #ABABAB !important;
+}
+
+.owl-dots button.active{
+    background:#fdce55;
+    border:none !important;
+}
+.quote-carousel-inner .owl-dots {
+    right: 0;
+    position: absolute;
+    right: 50%;
+    margin-top: 26px;
+    margin-right: -25px;
+}
+.carousel-products .owl-dots {
+    right: -73px;
+    position: absolute;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-products .owl-dots button {
+    margin: 7px 0;
+}
+.see-all-btn {
+    margin-top: 53px;
+}
+/*End Owl btn css*/
+
+
+
+/*=======Footer CSS =======*/
+.footer-area {
+    background: #2A2D46;
+    padding: 52px 0;
+    border-radius:50px 50px 0px 0px;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-menu {
+    display: flex;
+}
+.footer-menu li {
+    margin: 0 13px;
+}
+
+.footer-menu li a {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.welcome-title {
+    margin-top: 73px;
+}
+/*======eND OF FOOTER CSS =====*/
+.why-reubens-section-inner.row {
+    align-items: center;
+}
+
+.why-nut {
+    padding-top: 75px;
+}
+.why-reu-btn {
+    margin-bottom: 30px;
+}
+
+
+
+/*---Mobile menu css ----*/
+.hide-row{
+    display: none;
+}
+.close-btn{
+    display: none;
+}
+.bars-hide{
+    display: none;
+}
+.carousel-products .owl-dots{
+    display: none;
+}
+button.owl-prev i {
+    position: absolute;
+    top: 50%;
+    left: -3%;
+    font-size: 60px;
+    margin-top: -25px;
+}
+
+button.owl-next i {
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    right: -3%;
+    font-size: 60px;
+}
+/*---End of mobile menu css ----*/
+@media(max-width: 1024px){
+    .carousel-products .owl-dots {
+    right: -38px;
+}
+.col-btn{
+    font-size: 13px;
+    padding: 9px 12px;
+}
+}
+/*=======Start of Responsive css =============*/
+@media(max-width: 768px){
+    .middle-menu-area{
+        position: fixed;
+        left: -1000px;
+        display: flex;
+        top: 0;
+        background: #2a2d46;
+        box-shadow: var(--shadow);
+        width: 300px;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        transition: .4s ease-in-out;
+    }
+    .middle-menu-area ul {
+        display: block;
+        padding: 12px;
+        text-align: center;
+    }
+    .close-btn {
+        display: block;
+        position: absolute;
+        color: #fff;
+        right: 5%;
+        font-size: 50px;
+        top: -8px;
+        cursor: pointer;
+    }
+    
+.middle-menu-area .main-menu li a {
+    font-size: 25px;
+    line-height: 61px;
+}
+.overlay-bg {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    position: fixed;
+    background: #2a2d4678;
+    z-index: 9;
+    cursor: pointer;
+    transition:all .3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.bars-hide{
+    display: block;
+    cursor: pointer;
+    color: #fff;
+    font-size: 21px;
+}
+.middle-menu-area.actie-hide-menu{
+    left: 0px;
+    z-index: 99999999;
+}
+.overlay-bg.active{
+    opacity: 1;
+    visibility: visible;
+    z-index: 9;
+}
+/*-----End of hidemobile menu responsive css -----*/
+.welcome-bg{
+    height: 560px;
+}
+.inside-foodbox-section .row .col-md-6 {
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+    text-align: center;
+}
+.grid-box-item-single-inner{
+    grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
+    max-width: 100%;
+    margin-left: 0;
+}
+.grid-box-single {
+     min-width: 100%; 
+     max-width: 100%; 
+}
+.welcome-bg .h1-title{
+    font-size: 30px;
+    text-shadow: 0 0 2px #333;
+}
+.welcome-bg{
+    height: 460px;
+}
+/*-----How it work css-----*/
+.line{
+    display: none;
+}
+.top-img img{
+    width: 150px;
+    height: 150px;
+}
+.how-it-inner {
+    grid-template-columns: repeat(auto-fit,minmax(212px, 1fr));
+    column-gap: 10px;}
+    .product-filter-area .nav{
+        justify-content: center;
+    }
+    .single-filter-pro-item {
+    width: 100%;
+    max-width: 100% !important;
+    flex-basis: 100% !important;
+    margin-bottom: 40px;
+    border-radius: 25px;
+}
+.filter-pro-title{
+    display: block !important;
+
+}
+.order-callto-inner{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.element-call-left {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.order-call-title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+ul.element-call-left li{
+    margin: 8px 19px;
+}
+.order-callto-right {
+    margin-top: 20px;
+}
+.single-quote-carousel{
+    flex-direction: column;
+}
+.left-img-quote img {
+    border-radius:25px 25px 25px 25px !important;
+    text-align:center;
+    padding-top:30px;
+}
+/*end of how it work*/
+.footer-inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+}
+
+@media(max-width: 414px){
+    .discount-area{
+        background-position: center left;
+        text-align: center;
+    }
+    .left-img-quote img{
+        padding-top: 0;
+    }
+    .top-author-inner {
+    padding: 0 20px;
+    text-align: center;
+}
+.meta-car-author{
+    text-align: left;
+    justify-content: center;
+}
+.h2-title{
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 14px;
+}
+.section-title{
+    font-size: 20px;
+}
+.how-it-inner-single-item h3{
+    margin-top: 10px;
+}
+.how-it-inner-single-item {
+    margin-bottom: 32px;
+    box-shadow: var(--shadow);
+    padding: 30px 0;
+    border-radius: 25px;
+}
+.meta-dis{
+    font-size: 18px;
+    line-height: 30px;
+}
+.big-title{
+    margin-bottom: 5px;
+    text-shadow: 0 0 2px #000;
+}
+.dis-p{
+    font-size: 15px;
+    padding: 0 46px;
+    line-height: 20px;
+}
+.carousel-products{
+    margin-left: 0;
+    margin-right: 0;
+}
+.special-meals-inner-tab{
+    grid-template-columns: repeat(auto-fit,minmax(103px, 1fr));
+}
+.nav-link{
+    box-shadow: var(--shadow);
+    border-radius: 50px;
+    margin: 10px;
+}
+.content-para {
+    min-height: 0;
+    margin-bottom: 28px;
+}
+.single-planing-box {
+    margin-bottom: 59px;
+}
+.hide-row{
+    display: block;
+}
+.right-content-grid-box h3{
+    display: none;
+}
+
+.how-it-work {
+    padding-bottom: 40px;
+    padding-top: 42px;
+}
+.inside-foodbox-section {
+    padding-bottom: 45px;
+}
+.planning-area{
+    padding: 0;
+}
+.quote-carousel-area {
+    padding-top: 0;
+}
+.title-mobile.col {
+    margin-bottom: 44px;
+}
+.main-box-content h2 {
+    font-size: 16px;
+    line-height: 18px;
+    }
+    .main-box-content p{
+        font-size: 13px;
+    }
+    .view-plan-btn{
+        font-size: 12px;
+        padding: 5px 18px;
+    }
+    .carousel-products .owl-dots {
+        right: 50%;
+        display: block;
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        bottom: -85% !important;
+        margin-top: 199px;
+        margin-right: -23%;
+}
+
+.carousel-products .owl-dots button {
+        margin: 0px 5px;
+}
+.first-carosuel{
+    margin-bottom: 70px !important;
+}
+.carousel-products {
+    margin-bottom: 70px;
+}
+.see-all-btn{
+    margin-top: 0;
+}
+.single-carousel-box-item {
+     border-radius: 0;
+     padding: 5px;
+     border: none;
+     box-shadow: var(--shadow);
+     margin-bottom: 25px;
+     background: #fff;
+}
+.bottom-buttons .boxed-btn {
+    margin: 0;
+    font-size: 10px;
+    padding: 3px 14px;
+}
+.price-text{
+    font-size: 14px;
+    line-height: 19px;
+}
+.expoore-fetured-products {
+    padding-top: 50px;
+}
+button.owl-prev i {
+    position: absolute;
+    top: 50%;
+    left: -4%;
+    font-size: 30px;
+    margin-top: -25px;
+}
+
+button.owl-next i {
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    right: -4%;
+    font-size: 30px;
+}
+}
+/*=======End of Responsive css =============*/
+
+
+.top-link {
+    right: 5%;
+    position: fixed;
+    z-index: 999999;
+    bottom: 10%;
+    color: #000;
+    font-weight: bold;
+    transition: .3s ease-in-out;
+    background: yellow;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: inline-block;
+    line-height: 37px;
+    border-radius: 50%;
+    font-size: 30px;
+    box-shadow: var(--shadow);
+    opacity: 0;
+    visibility: hidden;
+}
+.top-active{
+    opacity: 1;
+    visibility: visible;
+}
+.top-link:hover{
+    color: #000;
+}
